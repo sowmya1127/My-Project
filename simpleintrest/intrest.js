@@ -8,11 +8,11 @@ function simpleintrest(){
     time=document.getElementById('time').value;
     rate=document.getElementById('rate').value;
      intrest=principle*time*rate/100;
-    document.getElementById('result').value=int;
+    document.getElementById('result').value=intrest;
      console.log('simpleintrest is'+ intrest);
     
    
-     
+    return false; 
 }
 
-simpleintrest();
+
