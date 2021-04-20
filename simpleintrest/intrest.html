@@ -3,26 +3,15 @@
     <title>SIMPLE INTREST</title>
     <head>
         <h1 style="color: whitesmoke;">SIMPLEINTREST</h1>
-         <style>
+    </head>
+    <style>
         body{
             background-color: rgb(12, 104, 104);
         }
-              form{
-                background: white;
-                color: black;
-                position: absolute;
-                top: 50%;
-                left:50%;
-                transform: translate(-50%,-50%);
-                max-width: 350px;
-                width: 80%;
-                padding:30px;
     </style>
-    </head>
-   
-    <body>
-        <form onsubmit="return simpleintrest()">
-        
+    <body style="text-align: center;color: white;">
+        <form onsubmit='return simpleintrest()' >
+
             <div>
                 <label>principle: </label>
                 <input id='principle' name='principle' type='number' required>
@@ -41,26 +30,29 @@
 
             </div>
             <br>
-          
             <div>
-                <button onclick='simpleintrest()'type='button'>simpleintrest</button>
-            
-
-            </div>
-            <br>
-            <div>
-                <label >Output</label>
-                <input id="result" type="text" disabled>
-            </div>
-            <br>
-            
                 
-        </form>
-        <script src="./intrest.js"></script>
+                <input type="submit">
+
+            </div>
+            <br>
+            <div>
+                <label>simpleintrest: </label>
+                <input id='intrest' name='intrest' type='number' required>
             
 
+            </div>
+            <br>
+            <div>
+                <p id='result'></p>
+            </div>
+            <br>
+            <div>
+                <script src="./intrest.js"></script>
+            </div>
 
-       
+
+        </form>
         
     </body>
     
