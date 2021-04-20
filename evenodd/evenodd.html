@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555322350/shape/mentalfloss/numbersprim_0.jpg);
+                background-position: center;
+                 background-repeat: no-repeat, repeat;
+                 background-size: cover;
+                 height: 1000px;
+            }
+            form{
+                
+                color: black;
+                position: fixed;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                max-width: 350px;
+                width: 80%;
+                padding:30px;
+
+            }
+        </style>
+        
+        
+
+    </head>
+    <body>
+        <form>
+            <div>
+                <label>lowerlimit</label>
+            <input id='lw' name='lower' type="number">
+            
+
+            </div>
+            <br>
+            <div>
+                <label>upperlimit</label>
+            <input id='up' name='upper' type="number">
+            
+            </div>
+            <br>
+            <div>
+                <button onclick="even()" type="button">even numbers</button>
+                <button onclick="odd()" type="button">odd numbers</button>
+            
+
+            </div>
+            <br>
+            <div>
+               
+                <input id="result" type="text" enabled>
+            </div>
+            <br>
+
+        </form>
+            
+            
+            
+            
+            
+
+            
+        
+        <script src=./evenodd.js></script>
+
+    </body>
+    
+</html>
