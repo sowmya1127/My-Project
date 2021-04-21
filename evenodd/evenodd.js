@@ -9,7 +9,9 @@ function even(){
     if(number%2==0){
         document.getElementById('result').value=number;
         console.log('number'+number);
+        
     }
+    return false
 
 }
 function odd(){
@@ -19,6 +21,7 @@ function odd(){
         document.getElementById('result').value=number;
         console.log('number'+number);
     }
+    return false;
 
 }
 
