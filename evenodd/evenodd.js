@@ -9,7 +9,7 @@ function even(){
 
     for (let number = lower; number < upper; number++) {
         if(number%2==0){
-            document.getElementById('result').value;
+            document.getElementById('result').innerText='even';
             console.log('number'+number);
         
     }
@@ -24,7 +24,7 @@ function odd(){
     upper=parseInt(document.getElementById('up').value);
     for (let number = lower; number < upper; number++) {
         if(number%2!=0){
-            document.getElementById('result').value;
+            document.getElementById('result').innerText='odd';
             console.log('number'+number);
 
     }
