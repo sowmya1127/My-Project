@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: cyan;
+            }
+            form{
+                color: black;
+                position: fixed;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                max-width: 350px;
+                width: 80%;
+                padding:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return primeNum()">
+            <div>
+                <label>Enter the number</label>
+                <input id="num" name="prime" type="number">
+            </div>
+            <br>
+            <button onclick='primeNum()' type="button">submit</button>
+            <div id="result">
+            </div>
+
+        </form>
+        <div>
+            <script src="./prime.js"></script>
+        </div>
+    </body>
+</html>
