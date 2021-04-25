@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 style="font-style:initial;text-align: center;">PALINDROME</h1>
+        <style>
+            body{
+                background-color:rgb(30, 165, 142);
+                background-position: center;
+                 background-repeat: no-repeat, repeat;
+                 background-size: contain;
+                 height: 500px;
+            }
+            form{
+                color: black;
+                position: fixed;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                max-width: 350px;
+                width: 80%;
+                padding:30px;
+
+                
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return palinDrome()">
+            <div>
+                <label>Enter a number</label>
+                <input id='number' name='palindrome'type='text'>
+
+                
+            </div>
+            <br>
+            <button onclick='palinDrome()' type="button">submit</button>
+            <div>
+                <label>output</label>
+                <input id="result" type="text" enabled>
+            </div>
+        </form>
+        <div>
+            <script src="./palindrome.js"></script>
+
+        </div>
+        
+    </body>
+</html>
