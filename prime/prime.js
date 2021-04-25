@@ -1,20 +1,28 @@
-var prime;
+var num;
 var int;
+var prime;
 function primeNum(){
-    prime=parseInt(document.getElementById('num').value);
-    for( var int=2;int<=prime/2;int++){
-        if(prime%int!=0){
-            output='It is a primeNumber'
-            document.getElementById("result").value=output;
-            console.log('It is a primeNumber');
-          
-            
-        }else{
-            output='It is   not primeNumber'
-            document.getElementById("result").value=output;
-            console.log('It is not primeNumber');
-
+    prime=1;
+    num=parseInt(document.getElementById('num').value);
+    for(var int=2;int<num;int++){
+        if(num%int==0){
+            prime=0;
+ 
         }
     }
-return false;
+        if(prime==1){
+            output='It is a prime number';
+            document.getElementById('result').value=output;
+            console.log("It is not a prime number");
+        }else{
+            output="It is not a prime number";
+            document.getElementById('result').value=output;
+            console.log("It is not a prime number");
+        }
+        
+    
+    return false;
+   
 }
+
+        
