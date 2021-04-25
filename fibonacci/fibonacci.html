@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(https://tse3.mm.bing.net/th?id=OIP.VT3B81ibPuWQYr0lNkkcdwHaCk&pid=Api&P=0&w=497&h=173);
+                background-position: center;
+                 background-repeat: no-repeat, repeat;
+                 background-size: cover;
+                 height: 700px;
+            }
+            form{
+                color:white;
+                position: fixed;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                max-width: 350px;
+                width: 80%;
+                padding:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return fibonacciSeries()">
+            <div>
+                <label>enter the number:</label>
+                <input id='num' name="number" type="number">
+            </div>
+            <br>
+            
+            <div>
+                <button onclick="fibonacciSeries()" type="button">fibonacciSeries</button>
+            </div>
+            <br>
+            <div>
+                <input id='result'>
+            </div>
+
+        </form>
+        <div>
+            <script src="./fibonacci.js"></script>
+        </div>
+    </body>
+</html>
