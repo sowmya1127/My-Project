@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555322350/shape/mentalfloss/numbersprim_0.jpg);
+                background-position: center;
+                background-repeat: no-repeat, repeat;
+                background-size: cover;
+                height: 650px;
+            }
+            form{
+                color: black;
+                position: fixed;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                max-width: 350px;
+                width: 80%;
+                padding:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return primeNum()">
+            <div>
+                <label>Enter the number</label>
+                <input id="num" name="prime" type="number">
+            </div>
+            <br>
+            <button onclick='primeNum()' type="button">submit</button>
+            <div>
+                <label>output</label>
+                <input id="result" type="text" enabled>
+            </div>
+
+        </form>
+        <div>
+            <script src="./1.js"></script>
+        </div>
+    </body>
+</html>
